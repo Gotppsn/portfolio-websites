@@ -1,10 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { XIcon } from '@heroicons/react/outline';
 import { 
-  HomeIcon, UserIcon, CollectionIcon, CodeIcon, 
-  ClipboardCheckIcon, CalendarIcon, CogIcon 
-} from '@heroicons/react/outline';
+  HomeIcon, 
+  UserIcon, 
+  RectangleStackIcon as CollectionIcon, 
+  CodeBracketIcon as CodeIcon, 
+  ClipboardDocumentCheckIcon as ClipboardCheckIcon, 
+  CalendarIcon, 
+  Cog6ToothIcon as CogIcon 
+} from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: HomeIcon },
@@ -39,10 +44,10 @@ const Sidebar = ({ open, setOpen }) => {
             type="button"
             className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
             onClick={() => setOpen(false)}
-          >
+            >
             <span className="sr-only">Close sidebar</span>
-            <XIcon className="h-6 w-6" aria-hidden="true" />
-          </button>
+            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
         </div>
         
         <nav className="flex-1 px-2 py-4 overflow-y-auto">

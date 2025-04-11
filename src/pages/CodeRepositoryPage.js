@@ -4,10 +4,8 @@ import {
   LockClosedIcon, LockOpenIcon, TagIcon,
   ClipboardCopyIcon, TrashIcon, PencilIcon
 } from '@heroicons/react/outline';
-// Import the SyntaxHighlighter component (updated)
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-// Import the styles directly (updated)
-import { atomOneDark, atomOneLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { oneDark, oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 // Mock data - replace with your API fetch
 const codeSnippetsData = [
@@ -477,13 +475,13 @@ const CodeRepositoryPage = () => {
                   
                   {/* Code Display */}
                   <div className="rounded-md overflow-hidden">
-                    <SyntaxHighlighter
-                      language={selectedSnippet.language}
-                      style={isDarkMode ? atomOneDark : atomOneLight}
-                      showLineNumbers
-                      customStyle={{ margin: 0, borderRadius: '0.375rem' }}
+                  <SyntaxHighlighter
+                    language={selectedSnippet.language}
+                    style={isDarkMode ? oneDark : oneLight}
+                    showLineNumbers
+                    customStyle={{ margin: 0, borderRadius: '0.375rem' }}
                     >
-                      {selectedSnippet.code}
+                    {selectedSnippet.code}
                     </SyntaxHighlighter>
                   </div>
                   
