@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  UserIcon, CollectionIcon, CodeIcon, 
-  ClipboardCheckIcon, CalendarIcon 
-} from '@heroicons/react/outline';
+    HomeIcon, 
+    UserIcon, 
+    RectangleStackIcon as CollectionIcon, 
+    CodeBracketIcon as CodeIcon, 
+    ClipboardDocumentCheckIcon as ClipboardCheckIcon, 
+    CalendarIcon, 
+    Cog6ToothIcon as CogIcon 
+  } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 // Sample data - replace with your actual data
 const stats = [

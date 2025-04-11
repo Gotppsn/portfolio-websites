@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { 
-  HomeIcon, 
-  UserIcon, 
-  RectangleStackIcon as CollectionIcon, 
-  CodeBracketIcon as CodeIcon, 
-  ClipboardDocumentCheckIcon as ClipboardCheckIcon, 
-  CalendarIcon, 
-  Cog6ToothIcon as CogIcon 
-} from '@heroicons/react/24/outline';
+    HomeIcon, 
+    UserIcon, 
+    RectangleStackIcon as CollectionIcon, 
+    CodeBracketIcon as CodeIcon, 
+    ClipboardDocumentCheckIcon as ClipboardCheckIcon, 
+    CalendarIcon, 
+    Cog6ToothIcon as CogIcon 
+  } from '@heroicons/react/24/outline';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
