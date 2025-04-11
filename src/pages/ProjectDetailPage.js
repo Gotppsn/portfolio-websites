@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { MailIcon } from '@heroicons/react/outline';
 import { 
   CalendarIcon, ClockIcon, CodeIcon, 
   DocumentTextIcon, GlobeAltIcon, 

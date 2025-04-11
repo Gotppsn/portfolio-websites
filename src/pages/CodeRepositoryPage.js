@@ -4,7 +4,9 @@ import {
   LockClosedIcon, LockOpenIcon, TagIcon,
   ClipboardCopyIcon, TrashIcon, PencilIcon
 } from '@heroicons/react/outline';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+// Import the SyntaxHighlighter component (updated)
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+// Import the styles directly (updated)
 import { atomOneDark, atomOneLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 // Mock data - replace with your API fetch

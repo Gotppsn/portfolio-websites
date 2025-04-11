@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { CalendarIcon } from '@heroicons/react/outline';
 import { 
   PlusIcon, ChevronLeftIcon, ChevronRightIcon, 
   XIcon, ClockIcon, LocationMarkerIcon, UsersIcon,
